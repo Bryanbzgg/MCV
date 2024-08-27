@@ -14,9 +14,16 @@ namespace MVC.Controllers
             Aluno a4 = new Aluno(4, "shereki", "oshereki@gmail.co", 92375489);
             Aluno a5 = new Aluno(5, "carlindolavas", "lavajato@gmail.co", 87564372);
 
+            List<Aluno> listAlunos = new List<Aluno>();
+
+            listAlunos.Add(a1);
+            listAlunos.Add(a2);
+            listAlunos.Add(a3);
+            listAlunos.Add(a4);
+            listAlunos.Add(a5);
 
 
-            return View();
+            return View(listAlunos);
         }
 
         //criando novo controlador
